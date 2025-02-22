@@ -42,6 +42,9 @@ func ConvertToBT(vec []int, index int, nodes []*Node) {
 			break
 		}
 
+		if n == nil {
+			continue
+		}
 		n.left = ToNode(vec[index])
 		index++
 		v = append(v, n.left)
